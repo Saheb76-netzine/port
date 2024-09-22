@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    nav {
+        width: 100%;
+        height: 100px;
+        background-color: rgb(42, 108, 165);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        font-weight: 400;
+        position: fixed;
+        border-radius: 50px;
+
+
+
+    }
+
+
+
+    .box {
+        width: 100%;
+        height: 500px;
+
+    }
+
+    .box1 {
+        background-color: rgb(42, 108, 165);
+        width: 100%;
+        
+        padding-top: 200px;
+        text-align: center;
+
+    }
+
+    .box2 {
+        background-color: rgb(42, 108, 165);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        margin: auto;
+
+
+    }
+
+    .box2 img {
+        width: 70%;
+        height: 50%;
+        border-radius: 50px;
+        margin-top: 150px;
+
+    }
+
+    .box4 img {
+        width: 70%;
+        height: 70%;
+        border-radius: 50px;
+        /* margin-top: 10px; */
+    }
+
+    .box3 {
+        background-color: rgb(42, 108, 165);
+        padding-top: 100px;
+        padding-left: 20px;
+        color: white;
+        text-align: center;
+    }
+
+    .box4 {
+        background-color: rgb(42, 108, 165);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding-left: 160px; */
+    }
+
+    .box5 {
+        background-color: rgb(42, 108, 165);
+        text-align: center;
+        padding-top: 70px;
+    }
+
+    .box6 {
+        background-color: rgb(42, 108, 165);
+    }
+
+
+
+
+    #main {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+
+
+    }
+
+    #main1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #main2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+
+    }
+
+
+
+    .css1 {
+        margin-right: 30px;
+        display: flex;
+        gap: 50px;
+        color: white;
+    }
+
+    .css {
+        margin-left: 10px;
+    }
+
+    a {
+        color: white;
+
+    }
+
+    a:hover {
+        color: yellowgreen;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    body {
+        font-size: larger;
+        color: white;
+    }
+
+    button {
+        background-color: white;
+        height: 50px;
+        width: 70px;
+        font-size: larger;
+        font-weight: 400;
+
+    }
+
+    #footer {
+        background-color: rgb(42, 108, 165);
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    .button {
+        display: none;
+
+
+    }
+
+    .css1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    @media (max-width:600px) {
+        .css1 {
+            position: absolute;
+            top: 100px;
+            flex-direction: column;
+            background-color: rgb(42, 108, 165);
+            width: 100vw;
+            height: 400px;
+            left: -130%;
+
+
+
+        }
+        #main, #main1{
+            grid-template-columns: 1fr;
+        }
+
+        #menu-btn:checked~.css1 {
+            left: 0;
+        }
+
+        .button {
+            display: block;
+
+        }
+        .button:hover {
+            color: yellowgreen;
+        font-size: 25px;
+        font-weight: bolder;
+            /* display: block; */
+
+        }
+        
+
+
+
+
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="css">SAHEB</div>
+        <input type="checkbox" id="menu-btn">
+        <div class="css1">
+            <a href="#main">Home</a>
+            <a href="#main1">About</a>
+            <a href="#main2">Education</a>
+            <a href="">Skills</a>
+            <a href="#footer">Contact</a>
+
+        </div>
+        <div class="button">
+            <label for="menu-btn">Click me</label>
+        </div>
+    </nav>
+    <hr width="100%" style="border: 1px solid white; position: fixed; top: 100px;">
+    <section id="main">
+        <div class="box box1">
+            <h1>About Me:-</h1>
+            <h1>I am From a Medical Field.</h1><br>
+            <p>I Want To become a Python FullStack Developer.</p><br>
+            <p>Which I Have Been Learing From a Coding Club.</p><br>
+            <p>Name Of the Club is Mumbai Coding Club.</p>
+
+        </div>
+        <div class="box box2">
+            <img src="medical logo.jpg"  width="100%">
+
+
+        </div>
+    </section>
+    <section id="main1">
+        <div class="box box3">
+            <h1>Hello my name is,</h1><br>
+            <h1>SAHEB SIDDIQUI.</h1><br>
+            <h2>and I'm a Web-developer.</h2>
+
+        </div>
+        <div class="box box4">
+            <img src="saheb.jpg" alt="">
+        </div>
+    </section>
+    <section id="main2">
+        <div class="box box5">
+            <h1>Education</h1>
+            <p>I have completed My Hsc From R.J College</p><br>
+            <p>And Completed My Graduation From A.I.K.T.C School Of Pharmacy</p>
+        </div>
+        <div class="box box6"></div>
+
+
+    </section>
+
+    <footer id="footer">
+        <div>
+            <h1>Contact Me:-816948828
+        </div>
+        </h1>
+
+    </footer>
+
+</body>
+
+</html>
